@@ -6,7 +6,7 @@
 #    By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/11/23 14:05:59 by jgo               #+#    #+#              #
-#    Updated: 2023/04/24 10:33:02 by jgo              ###   ########.fr        #
+#    Updated: 2023/04/25 22:02:02 by jgo              ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ include ./makeConfig/Color_rules.mk
 
 PROJECT_NAME := cpp_module_01
 
-DIRS := ex00 ex01 ex02 ex03 ex04 ex05 ex06
+DIRS := ex00
 
 $(DIRS):
 	$(MAKE) -C $@
