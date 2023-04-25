@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 14:15:10 by jgo               #+#    #+#             */
-/*   Updated: 2023/04/25 20:50:30 by jgo              ###   ########.fr       */
+/*   Updated: 2023/04/25 22:09:01 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,20 @@
 
 int main (void)
 {
+	Zombie *heapZombie;
+	Zombie *heapZombie2;
 	{
 		Zombie stackZombie("STACK");
 	}
-	Zombie *heapZombie;
-	Zombie *heapZombie2;
 
 	heapZombie = newZombie("HEAP");
-	heapZombie->announce();
 	{
 		heapZombie2 = newZombie("HEAP2");
 	}
-	heapZombie2->announce();
+	if (heapZombie)
+		heapZombie->announce();
+	if (heapZombie2)
+		heapZombie2->announce();
 	delete heapZombie;
 	delete heapZombie2;
 

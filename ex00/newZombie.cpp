@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 15:26:09 by jgo               #+#    #+#             */
-/*   Updated: 2023/04/25 22:00:45 by jgo              ###   ########.fr       */
+/*   Updated: 2023/04/25 22:10:57 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ Zombie *newZombie(std::string name) {
 		heapZombie = new Zombie(name);
 	} catch (const std::bad_alloc &e) {
 		std::cerr << e.what() << '\n';
+		return (NULL);
 	}
-
 	return (heapZombie);
 }
