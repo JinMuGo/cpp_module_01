@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 14:15:57 by jgo               #+#    #+#             */
-/*   Updated: 2023/04/25 20:49:39 by jgo              ###   ########.fr       */
+/*   Updated: 2023/04/25 22:27:41 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 class Zombie {
   private:
 	std::string name;
+
   public:
 	Zombie(std::string name);
 	~Zombie();
