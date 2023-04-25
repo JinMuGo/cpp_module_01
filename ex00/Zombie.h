@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 14:16:26 by jgo               #+#    #+#             */
-/*   Updated: 2023/04/24 15:51:51 by jgo              ###   ########.fr       */
+/*   Updated: 2023/04/25 20:37:23 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,5 @@
 #include <iostream>
 
 #define ANNOUNCE "BraiiiiiiinnnzzzZ..."
-
-void randomChump(std::string name);
-Zombie *newZombie(std::string name);
 
 #endif
