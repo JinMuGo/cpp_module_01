@@ -15,7 +15,7 @@ include ./makeConfig/Color_rules.mk
 
 PROJECT_NAME := cpp_module_01
 
-DIRS := ex00 ex01
+DIRS := ex00 ex01 ex02
 
 $(DIRS):
 	$(MAKE) -C $@
