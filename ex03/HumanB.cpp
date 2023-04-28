@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 14:41:31 by jgo               #+#    #+#             */
-/*   Updated: 2023/04/26 16:56:34 by jgo              ###   ########.fr       */
+/*   Updated: 2023/04/28 20:54:37 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,4 +23,6 @@ void HumanB::attack(void) const {
 				  << "\n";
 }
 
-void HumanB::setWeapon(Weapon &_myWeapon) { this->myWeapon = &_myWeapon; }
+void HumanB::setWeapon(Weapon& _myWeapon) {
+	this->myWeapon = &_myWeapon;
+}

@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 14:13:20 by jgo               #+#    #+#             */
-/*   Updated: 2023/04/26 16:57:01 by jgo              ###   ########.fr       */
+/*   Updated: 2023/04/28 20:54:04 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,10 @@
 
 Weapon::Weapon(std::string _type) : type(_type) {}
 
-const std::string &Weapon::getType() const { return (this->type); }
+const std::string& Weapon::getType() const {
+	return (this->type);
+}
 
-void Weapon::setType(std::string _type) { this->type = _type; }
+void Weapon::setType(std::string _type) {
+	this->type = _type;
+}

@@ -6,18 +6,18 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 14:30:05 by jgo               #+#    #+#             */
-/*   Updated: 2023/04/26 16:56:23 by jgo              ###   ########.fr       */
+/*   Updated: 2023/04/28 20:54:38 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanA.h"
 
 class HumanA {
-  private:
+   private:
 	std::string name;
-	Weapon &myWeapon;
+	Weapon& myWeapon;
 
-  public:
-	HumanA(std::string _name, Weapon &_myWeapon);
+   public:
+	HumanA(std::string _name, Weapon& _myWeapon);
 	void attack(void) const;
 };
