@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/27 13:23:01 by jgo               #+#    #+#             */
-/*   Updated: 2023/04/28 21:42:38 by jgo              ###   ########.fr       */
+/*   Updated: 2023/04/28 21:56:21 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ int main(int ac, char** av) {
 	const size_t s2Size = strlen(av[S2]);
 	std::string line;
 	std::ifstream file(av[FILE_NAME], std::ios::in);
-	std::ofstream outFile(makeReplaceFileName(av[FILE_NAME]),
-						  std::ios::trunc | std::ios::out);
+	std::ofstream outFile(makeReplaceFileName(av[FILE_NAME]).c_str(),
+						  std::ofstream::trunc | std::ofstream::out);
 
 	if (!file.is_open() || !outFile.is_open())
 		return (prt_err(ERR_FILE));
