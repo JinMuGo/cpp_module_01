@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 14:07:06 by jgo               #+#    #+#             */
-/*   Updated: 2023/04/28 20:54:08 by jgo              ###   ########.fr       */
+/*   Updated: 2023/04/29 11:24:08 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ class Weapon {
 
   public:
 	Weapon(std::string _type);
+	~Weapon();
 	const std::string &getType() const;
 	void setType(std::string _type);
 };
