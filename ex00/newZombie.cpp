@@ -6,20 +6,20 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 15:26:09 by jgo               #+#    #+#             */
-/*   Updated: 2023/04/28 17:15:22 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/01 12:47:25 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
 Zombie* newZombie(std::string name) {
-    Zombie* heapZombie;
+	Zombie* heapZombie;
 
-    try {
-        heapZombie = new Zombie(name);
-    } catch (const std::bad_alloc& e) {
-        std::cerr << e.what() << '\n';
-        return (NULL);
-    }
-    return (heapZombie);
+	try {
+		heapZombie = new Zombie(name);
+	} catch (const std::bad_alloc& e) {
+		std::cerr << e.what() << '\n';
+		return (NULL);
+	}
+	return (heapZombie);
 }
