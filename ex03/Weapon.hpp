@@ -6,14 +6,14 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 14:07:06 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/01 12:48:54 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/01 13:09:01 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.h"
 
-#pragma once
-#ifndef Weapon
+#ifndef WEAPON_HPP
+#define WEAPON_HPP
 
 class Weapon {
 

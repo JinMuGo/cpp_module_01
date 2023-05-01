@@ -6,11 +6,14 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 14:15:57 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/01 12:48:10 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/01 13:08:25 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.h"
+
+#ifndef ZOMBIE_HPP
+#define ZOMBIE_HPP
 
 class Zombie {
    private:
@@ -25,3 +28,5 @@ class Zombie {
 };
 
 Zombie* zombieHorde(int N, std::string name);
+
+#endif

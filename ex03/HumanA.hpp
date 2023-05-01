@@ -6,11 +6,14 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 14:30:05 by jgo               #+#    #+#             */
-/*   Updated: 2023/04/29 11:23:17 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/01 13:08:40 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanA.h"
+
+#ifndef HUMAN_A_HPP
+#define HUMAN_A_HPP
 
 class HumanA {
    private:
@@ -22,3 +25,5 @@ class HumanA {
 	~HumanA();
 	void attack(void) const;
 };
+
+#endif
