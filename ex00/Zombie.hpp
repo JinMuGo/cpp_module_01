@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 14:15:57 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/01 13:08:08 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/02 15:16:29 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,8 @@
 
 class Zombie {
    private:
-	std::string name;
+	std::string name_;
+	static const std::string kAnnounce;
 
    public:
 	Zombie(std::string name);

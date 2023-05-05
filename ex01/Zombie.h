@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 14:16:26 by jgo               #+#    #+#             */
-/*   Updated: 2023/04/25 20:37:23 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/02 15:15:50 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,5 @@
 #define ZOMBIE_H
 
 #include <iostream>
-
-#define ANNOUNCE "BraiiiiiiinnnzzzZ..."
 
 #endif

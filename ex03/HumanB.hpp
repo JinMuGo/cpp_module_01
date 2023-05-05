@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 14:40:52 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/01 13:08:50 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/02 15:21:56 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,14 @@
 
 class HumanB {
    private:
-	std::string name;
-	Weapon* myWeapon;
+	std::string name_;
+	Weapon* myWeapon_;
 
    public:
-	HumanB(std::string _name);
+	HumanB(std::string name);
 	~HumanB();
 	void attack(void) const;
-	void setWeapon(Weapon& _myWeapon);
+	void setWeapon(Weapon& myWeapon);
 };
 
 #endif

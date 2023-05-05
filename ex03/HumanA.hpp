@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/26 14:30:05 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/01 13:08:40 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/02 15:20:31 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@
 
 class HumanA {
    private:
-	std::string name;
-	Weapon& myWeapon;
+	std::string name_;
+	Weapon& myWeapon_;
 
    public:
-	HumanA(std::string _name, Weapon& _myWeapon);
+	HumanA(std::string name, Weapon& myWeapon);
 	~HumanA();
 	void attack(void) const;
 };
