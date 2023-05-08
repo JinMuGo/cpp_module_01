@@ -1,30 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   zombieHorde.cpp                                    :+:      :+:    :+:   */
+/*   Replace.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/25 20:52:35 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/08 20:24:49 by jgo              ###   ########.fr       */
+/*   Created: 2023/05/08 20:21:13 by jgo               #+#    #+#             */
+/*   Updated: 2023/05/08 20:45:30 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef REPLACE_HPP
+#define REPLACE_HPP
 
-Zombie* zombieHorde(int N, std::string name) {
-	Zombie* ZombieArr;
+#include "main.h"
 
-	std::cout << "zombieHorde func called" << std::endl;
-	try {
-		ZombieArr = new Zombie[N];
-		for (int i = 0; i < N; i++)
-			ZombieArr[i].setName(name);
-	} catch (const std::bad_alloc& e) {
-		std::cerr << e.what() << '\n';
-		if (ZombieArr != NULL)
-			delete[] ZombieArr;
-		return (NULL);
-	}
-	return (ZombieArr);
-}
+class Replace {
+   private:
+	const std::string fileName_;
+	const std::string s1_;
+	const std::string s2_;
+
+   public:
+	Replace(const char* fileName, const char* s1, const char* s2);
+	~Replace();
+	static bool prtErr(std::string msg);
+	bool replaceFile(void);
+};
+
+#endif

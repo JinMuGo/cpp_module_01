@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 15:26:09 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/01 12:47:25 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/08 20:25:04 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 Zombie* newZombie(std::string name) {
 	Zombie* heapZombie;
 
+	std::cout << "newZombie func called" << std::endl;
 	try {
 		heapZombie = new Zombie(name);
 	} catch (const std::bad_alloc& e) {

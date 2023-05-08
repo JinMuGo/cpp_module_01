@@ -1,0 +1,8 @@
+{
+	"files.associations": {
+		"filesystem": "cpp",
+		"new": "cpp",
+		"iosfwd": "cpp",
+		"fstream": "cpp"
+	}
+}

@@ -6,7 +6,7 @@
 /*   By: jgo <jgo@student.42seoul.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/24 14:19:00 by jgo               #+#    #+#             */
-/*   Updated: 2023/05/02 15:15:20 by jgo              ###   ########.fr       */
+/*   Updated: 2023/05/08 20:35:46 by jgo              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ Zombie::Zombie() {}
 
 Zombie::Zombie(std::string name) {
 	this->name_ = name;
+	this->announce();
 }
 
 Zombie::~Zombie() {
@@ -31,4 +32,5 @@ void Zombie::announce(void) {
 
 void Zombie::setName(std::string name) {
 	this->name_ = name;
+	this->announce();
 }
